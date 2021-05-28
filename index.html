@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<input type="button" value="Click to see New text" onclick="location.reload()">
+	<div id="output">
+		
+	</div>
+
+</body>
+<script>
+	var lan = Math.floor(Math.random() * 2);
+	
+	var A0="আসসালামুআলাইকুম";
+	var bs = Math.floor(Math.random() * 3) ;
+	var cs = Math.floor(Math.random() * 3) ;
+	var ds = Math.floor(Math.random() * 6) ;
+	var es = Math.floor(Math.random() * 3) ;
+	var fs = Math.floor(Math.random() * 4) ;
+
+	var B0=["রেড টেল প্লাটিনাম","কিছু ইমপোর্টেড রেড টেল প্লাটিনাম আছে","থাইলেন্ড থেকে ইমপোর্টেড কিছু রেড টেল প্লাটিনাম আছে"];
+	var C0=["লোকেশন: গাজীপুর","লোকেশন: বোর্ড বাজার, গাজীপুর","লোকেশন: বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয়, গাজীপুর"];
+	var D0=["বিস্তারিত জানতে ইনবক্স করুন","ইনবক্সে নক করুন ","মেসেন্জারে নক দিতে পারেন","আগ্রহী হলে ইনবক্স করুন","যারা নিবেন তারা যোগাযোগ করতে পারেন ","আসেন বিস্তারিত আলাপ মেসেন্জারে করি"];
+	var E0=["ঢাকায় হোম ডেলিভারী","হোম ডেলিভারী","ডেলিভারী সম্ভব (শর্তস্বাপেক্ষে)"];
+	var F0=["সারাদেশে ডেলিভারী দেওয়া যাবে।","ঢাকার বাহিরে পাঠানো যাবে","সারাদেশে ডেলিভারি সম্ভব","ঢাকার বাইরে কুরিয়ার করা হয়।"];
+
+	var B1=["Red Tail Platinum","Red Tail Platinum Imported ","Red Tail Platinum (Imported from Thailand)"];
+	var C1=["Location: Gazipur ","Location: Board Bazar, Gazipur","Location: Bangladesh Open University, Gazipur"];
+	var D1=["Inbox for details ","Inbox for Details","You can knock on Messenger","If you are interested, please inbox. ","Contact Me over Messenger Please"];
+	var E1=["Home delivery in Dhaka ","Home delivery","Delivery possible (Condition Applies)"];
+	var F1=["Delivery can be made all over the country. ","Can be sent out of Dhaka","Delivery is possible across the country ","Courier possible in Whole Bangladesh"];
+
+
+
+
+
+
+
+
+
+
+
+
+	var A1="Assalamualaikum";
+
+
+	//document.getElementById("output").innerHTML = window["A" + lan] + "<br>" + window["B" + lan + "[" + 0 + "]"];
+	document.getElementById("output").innerHTML = 
+	//eval("A" + lan) + "<br>" +
+	  eval("B" + lan + "[" + bs + "]") + "<br>"
+	+  eval("C" + lan + "[" + cs + "]") + "<br>"
+	+  eval("D" + lan + "[" + ds + "]") + "<br>"
+	+  eval("E" + lan + "[" + es + "]") + "<br>"
+	+  eval("F" + lan + "[" + fs + "]") + "<br>" ;
+
+</script>
+</html>
